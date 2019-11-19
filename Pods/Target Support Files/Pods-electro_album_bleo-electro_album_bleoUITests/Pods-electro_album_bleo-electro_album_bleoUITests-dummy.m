@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_electro_album_bleo_electro_album_bleoUITests : NSObject
+@end
+@implementation PodsDummy_Pods_electro_album_bleo_electro_album_bleoUITests
+@end

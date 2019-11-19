@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302B779324B9CA9CCB5A17D2 /* Pods_electro_album_bleoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEF61DF9086E947D0CCE57D /* Pods_electro_album_bleoTests.framework */; };
+		7706A6D6237CF47500C6C1D4 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6D5237CF47500C6C1D4 /* AlbumViewController.swift */; };
+		7706A6D8237CF48000C6C1D4 /* AlbumReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6D7237CF48000C6C1D4 /* AlbumReactor.swift */; };
+		7706A6DA237D03E300C6C1D4 /* AlbumFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6D9237D03E300C6C1D4 /* AlbumFlow.swift */; };
+		7706A6DD237D31BE00C6C1D4 /* AlbumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6DC237D31BE00C6C1D4 /* AlbumResponse.swift */; };
+		7706A6DF237D31FA00C6C1D4 /* AlbumListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6DE237D31FA00C6C1D4 /* AlbumListResponse.swift */; };
+		7706A6E2237D32B300C6C1D4 /* BleoAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6E1237D32B300C6C1D4 /* BleoAPIEndPoint.swift */; };
+		7706A6E6237D3B1900C6C1D4 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6E5237D3B1900C6C1D4 /* AlbumList.swift */; };
+		7706A6E8237E439100C6C1D4 /* CustomJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706A6E7237E439100C6C1D4 /* CustomJsonDecoder.swift */; };
+		77F6DC9E237BA02600D05FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DC9D237BA02600D05FCD /* AppDelegate.swift */; };
+		77F6DCA7237BA02800D05FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F6DCA6237BA02800D05FCD /* Assets.xcassets */; };
+		77F6DCAA237BA02800D05FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F6DCA8237BA02800D05FCD /* LaunchScreen.storyboard */; };
+		77F6DCB5237BA02800D05FCD /* BleoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCB4237BA02800D05FCD /* BleoTest.swift */; };
+		77F6DCC0237BA02800D05FCD /* BleoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCBF237BA02800D05FCD /* BleoUITest.swift */; };
+		77F6DCD2237BA61100D05FCD /* BleoFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCD1237BA61100D05FCD /* BleoFlow.swift */; };
+		77F6DCD4237BA61A00D05FCD /* BleoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCD3237BA61A00D05FCD /* BleoService.swift */; };
+		77F6DCD7237BA96400D05FCD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCD6237BA96400D05FCD /* SplashViewController.swift */; };
+		77F6DCD9237BA96D00D05FCD /* SplashReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCD8237BA96D00D05FCD /* SplashReactor.swift */; };
+		77F6DCDB237BB68600D05FCD /* BleoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCDA237BB68600D05FCD /* BleoAPIService.swift */; };
+		77F6DCDD237BC8B500D05FCD /* BleoNavigateStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCDC237BC8B500D05FCD /* BleoNavigateStep.swift */; };
+		77F6DCDF237BCA4300D05FCD /* SplashFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F6DCDE237BCA4300D05FCD /* SplashFlow.swift */; };
+		B4756C7426ECEEF93B405E7E /* Pods_electro_album_bleo_electro_album_bleoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C817BCDD47D45FD7AEAA3894 /* Pods_electro_album_bleo_electro_album_bleoUITests.framework */; };
+		D092B0093BC904964AE77939 /* Pods_electro_album_bleo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B355195C300EDB13CD98B1 /* Pods_electro_album_bleo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77F6DCB1237BA02800D05FCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77F6DC92237BA02600D05FCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77F6DC99237BA02600D05FCD;
+			remoteInfo = electro_album_bleo;
+		};
+		77F6DCBC237BA02800D05FCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77F6DC92237BA02600D05FCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77F6DC99237BA02600D05FCD;
+			remoteInfo = electro_album_bleo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D131E78BBAA24CFA127F6C4 /* Pods-electro_album_bleoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-electro_album_bleoTests.debug.xcconfig"; path = "Target Support Files/Pods-electro_album_bleoTests/Pods-electro_album_bleoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56B355195C300EDB13CD98B1 /* Pods_electro_album_bleo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_electro_album_bleo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7706A6D5237CF47500C6C1D4 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		7706A6D7237CF48000C6C1D4 /* AlbumReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumReactor.swift; sourceTree = "<group>"; };
+		7706A6D9237D03E300C6C1D4 /* AlbumFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumFlow.swift; sourceTree = "<group>"; };
+		7706A6DC237D31BE00C6C1D4 /* AlbumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResponse.swift; sourceTree = "<group>"; };
+		7706A6DE237D31FA00C6C1D4 /* AlbumListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListResponse.swift; sourceTree = "<group>"; };
+		7706A6E1237D32B300C6C1D4 /* BleoAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoAPIEndPoint.swift; sourceTree = "<group>"; };
+		7706A6E5237D3B1900C6C1D4 /* AlbumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumList.swift; sourceTree = "<group>"; };
+		7706A6E7237E439100C6C1D4 /* CustomJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomJsonDecoder.swift; sourceTree = "<group>"; };
+		77F6DC9A237BA02600D05FCD /* electro_album_bleo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = electro_album_bleo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F6DC9D237BA02600D05FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77F6DCA6237BA02800D05FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77F6DCA9237BA02800D05FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77F6DCAB237BA02800D05FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F6DCB0237BA02800D05FCD /* electro_album_bleoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = electro_album_bleoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F6DCB4237BA02800D05FCD /* BleoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoTest.swift; sourceTree = "<group>"; };
+		77F6DCB6237BA02800D05FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F6DCBB237BA02800D05FCD /* electro_album_bleoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = electro_album_bleoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F6DCBF237BA02800D05FCD /* BleoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoUITest.swift; sourceTree = "<group>"; };
+		77F6DCC1237BA02800D05FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F6DCD1237BA61100D05FCD /* BleoFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoFlow.swift; sourceTree = "<group>"; };
+		77F6DCD3237BA61A00D05FCD /* BleoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoService.swift; sourceTree = "<group>"; };
+		77F6DCD6237BA96400D05FCD /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		77F6DCD8237BA96D00D05FCD /* SplashReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReactor.swift; sourceTree = "<group>"; };
+		77F6DCDA237BB68600D05FCD /* BleoAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoAPIService.swift; sourceTree = "<group>"; };
+		77F6DCDC237BC8B500D05FCD /* BleoNavigateStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleoNavigateStep.swift; sourceTree = "<group>"; };
+		77F6DCDE237BCA4300D05FCD /* SplashFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFlow.swift; sourceTree = "<group>"; };
+		7EA83F463EA1DE52E5027E1C /* Pods-electro_album_bleo-electro_album_bleoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-electro_album_bleo-electro_album_bleoUITests.debug.xcconfig"; path = "Target Support Files/Pods-electro_album_bleo-electro_album_bleoUITests/Pods-electro_album_bleo-electro_album_bleoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9995D283EB61626547FECCA7 /* Pods-electro_album_bleo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-electro_album_bleo.debug.xcconfig"; path = "Target Support Files/Pods-electro_album_bleo/Pods-electro_album_bleo.debug.xcconfig"; sourceTree = "<group>"; };
+		B1843F7B4AFB463B386AF2CC /* Pods-electro_album_bleo-electro_album_bleoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-electro_album_bleo-electro_album_bleoUITests.release.xcconfig"; path = "Target Support Files/Pods-electro_album_bleo-electro_album_bleoUITests/Pods-electro_album_bleo-electro_album_bleoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3DA143D127FD640BB7A7CEA /* Pods-electro_album_bleo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-electro_album_bleo.release.xcconfig"; path = "Target Support Files/Pods-electro_album_bleo/Pods-electro_album_bleo.release.xcconfig"; sourceTree = "<group>"; };
+		C817BCDD47D45FD7AEAA3894 /* Pods_electro_album_bleo_electro_album_bleoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_electro_album_bleo_electro_album_bleoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98CF2E811843DFFF53B8B35 /* Pods-electro_album_bleoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-electro_album_bleoTests.release.xcconfig"; path = "Target Support Files/Pods-electro_album_bleoTests/Pods-electro_album_bleoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAEF61DF9086E947D0CCE57D /* Pods_electro_album_bleoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_electro_album_bleoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77F6DC97237BA02600D05FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D092B0093BC904964AE77939 /* Pods_electro_album_bleo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F6DCAD237BA02800D05FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302B779324B9CA9CCB5A17D2 /* Pods_electro_album_bleoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F6DCB8237BA02800D05FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4756C7426ECEEF93B405E7E /* Pods_electro_album_bleo_electro_album_bleoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A31064D47E734164BEDA2BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56B355195C300EDB13CD98B1 /* Pods_electro_album_bleo.framework */,
+				C817BCDD47D45FD7AEAA3894 /* Pods_electro_album_bleo_electro_album_bleoUITests.framework */,
+				EAEF61DF9086E947D0CCE57D /* Pods_electro_album_bleoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7706A6D4237CF45700C6C1D4 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				7706A6D5237CF47500C6C1D4 /* AlbumViewController.swift */,
+				7706A6D7237CF48000C6C1D4 /* AlbumReactor.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		7706A6DB237D319800C6C1D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7706A6DC237D31BE00C6C1D4 /* AlbumResponse.swift */,
+				7706A6DE237D31FA00C6C1D4 /* AlbumListResponse.swift */,
+				7706A6E5237D3B1900C6C1D4 /* AlbumList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7706A6E0237D32A300C6C1D4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7706A6E1237D32B300C6C1D4 /* BleoAPIEndPoint.swift */,
+				7706A6E7237E439100C6C1D4 /* CustomJsonDecoder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		77F6DC91237BA02600D05FCD = {
+			isa = PBXGroup;
+			children = (
+				77F6DC9C237BA02600D05FCD /* electro_album_bleo */,
+				77F6DCB3237BA02800D05FCD /* electro_album_bleoTests */,
+				77F6DCBE237BA02800D05FCD /* electro_album_bleoUITests */,
+				77F6DC9B237BA02600D05FCD /* Products */,
+				F3AF71955C82F8D2D44989AE /* Pods */,
+				2A31064D47E734164BEDA2BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77F6DC9B237BA02600D05FCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DC9A237BA02600D05FCD /* electro_album_bleo.app */,
+				77F6DCB0237BA02800D05FCD /* electro_album_bleoTests.xctest */,
+				77F6DCBB237BA02800D05FCD /* electro_album_bleoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77F6DC9C237BA02600D05FCD /* electro_album_bleo */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DC9D237BA02600D05FCD /* AppDelegate.swift */,
+				77F6DCAB237BA02800D05FCD /* Info.plist */,
+				77F6DCA6237BA02800D05FCD /* Assets.xcassets */,
+				77F6DCA8237BA02800D05FCD /* LaunchScreen.storyboard */,
+				7706A6E0237D32A300C6C1D4 /* Network */,
+				7706A6DB237D319800C6C1D4 /* Model */,
+				77F6DCD5237BA95900D05FCD /* Splash */,
+				7706A6D4237CF45700C6C1D4 /* Album */,
+				77F6DCCE237BA5EA00D05FCD /* Flows */,
+				77F6DCD0237BA5FB00D05FCD /* Services */,
+			);
+			path = electro_album_bleo;
+			sourceTree = "<group>";
+		};
+		77F6DCB3237BA02800D05FCD /* electro_album_bleoTests */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DCB4237BA02800D05FCD /* BleoTest.swift */,
+				77F6DCB6237BA02800D05FCD /* Info.plist */,
+			);
+			path = electro_album_bleoTests;
+			sourceTree = "<group>";
+		};
+		77F6DCBE237BA02800D05FCD /* electro_album_bleoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DCBF237BA02800D05FCD /* BleoUITest.swift */,
+				77F6DCC1237BA02800D05FCD /* Info.plist */,
+			);
+			path = electro_album_bleoUITests;
+			sourceTree = "<group>";
+		};
+		77F6DCCE237BA5EA00D05FCD /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DCDC237BC8B500D05FCD /* BleoNavigateStep.swift */,
+				77F6DCD1237BA61100D05FCD /* BleoFlow.swift */,
+				77F6DCDE237BCA4300D05FCD /* SplashFlow.swift */,
+				7706A6D9237D03E300C6C1D4 /* AlbumFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		77F6DCD0237BA5FB00D05FCD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DCD3237BA61A00D05FCD /* BleoService.swift */,
+				77F6DCDA237BB68600D05FCD /* BleoAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		77F6DCD5237BA95900D05FCD /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				77F6DCD6237BA96400D05FCD /* SplashViewController.swift */,
+				77F6DCD8237BA96D00D05FCD /* SplashReactor.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F3AF71955C82F8D2D44989AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9995D283EB61626547FECCA7 /* Pods-electro_album_bleo.debug.xcconfig */,
+				B3DA143D127FD640BB7A7CEA /* Pods-electro_album_bleo.release.xcconfig */,
+				7EA83F463EA1DE52E5027E1C /* Pods-electro_album_bleo-electro_album_bleoUITests.debug.xcconfig */,
+				B1843F7B4AFB463B386AF2CC /* Pods-electro_album_bleo-electro_album_bleoUITests.release.xcconfig */,
+				2D131E78BBAA24CFA127F6C4 /* Pods-electro_album_bleoTests.debug.xcconfig */,
+				D98CF2E811843DFFF53B8B35 /* Pods-electro_album_bleoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77F6DC99237BA02600D05FCD /* electro_album_bleo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F6DCC4237BA02800D05FCD /* Build configuration list for PBXNativeTarget "electro_album_bleo" */;
+			buildPhases = (
+				3AB1B67CBE48011FC63E480C /* [CP] Check Pods Manifest.lock */,
+				77F6DC96237BA02600D05FCD /* Sources */,
+				77F6DC97237BA02600D05FCD /* Frameworks */,
+				77F6DC98237BA02600D05FCD /* Resources */,
+				77F6DCCD237BA07C00D05FCD /* ShellScript */,
+				7D5E8F908F1B9739411397B3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = electro_album_bleo;
+			productName = electro_album_bleo;
+			productReference = 77F6DC9A237BA02600D05FCD /* electro_album_bleo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77F6DCAF237BA02800D05FCD /* electro_album_bleoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F6DCC7237BA02800D05FCD /* Build configuration list for PBXNativeTarget "electro_album_bleoTests" */;
+			buildPhases = (
+				73062405BE534419CFB1E911 /* [CP] Check Pods Manifest.lock */,
+				77F6DCAC237BA02800D05FCD /* Sources */,
+				77F6DCAD237BA02800D05FCD /* Frameworks */,
+				77F6DCAE237BA02800D05FCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77F6DCB2237BA02800D05FCD /* PBXTargetDependency */,
+			);
+			name = electro_album_bleoTests;
+			productName = electro_album_bleoTests;
+			productReference = 77F6DCB0237BA02800D05FCD /* electro_album_bleoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77F6DCBA237BA02800D05FCD /* electro_album_bleoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F6DCCA237BA02800D05FCD /* Build configuration list for PBXNativeTarget "electro_album_bleoUITests" */;
+			buildPhases = (
+				893B627B7D588830B278F17C /* [CP] Check Pods Manifest.lock */,
+				77F6DCB7237BA02800D05FCD /* Sources */,
+				77F6DCB8237BA02800D05FCD /* Frameworks */,
+				77F6DCB9237BA02800D05FCD /* Resources */,
+				417F24E21929596083C41D0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77F6DCBD237BA02800D05FCD /* PBXTargetDependency */,
+			);
+			name = electro_album_bleoUITests;
+			productName = electro_album_bleoUITests;
+			productReference = 77F6DCBB237BA02800D05FCD /* electro_album_bleoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77F6DC92237BA02600D05FCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = bleo;
+				TargetAttributes = {
+					77F6DC99237BA02600D05FCD = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					77F6DCAF237BA02800D05FCD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 77F6DC99237BA02600D05FCD;
+					};
+					77F6DCBA237BA02800D05FCD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 77F6DC99237BA02600D05FCD;
+					};
+				};
+			};
+			buildConfigurationList = 77F6DC95237BA02600D05FCD /* Build configuration list for PBXProject "electro_album_bleo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77F6DC91237BA02600D05FCD;
+			productRefGroup = 77F6DC9B237BA02600D05FCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77F6DC99237BA02600D05FCD /* electro_album_bleo */,
+				77F6DCAF237BA02800D05FCD /* electro_album_bleoTests */,
+				77F6DCBA237BA02800D05FCD /* electro_album_bleoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77F6DC98237BA02600D05FCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F6DCAA237BA02800D05FCD /* LaunchScreen.storyboard in Resources */,
+				77F6DCA7237BA02800D05FCD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F6DCAE237BA02800D05FCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F6DCB9237BA02800D05FCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AB1B67CBE48011FC63E480C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-electro_album_bleo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		417F24E21929596083C41D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-electro_album_bleo-electro_album_bleoUITests/Pods-electro_album_bleo-electro_album_bleoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-electro_album_bleo-electro_album_bleoUITests/Pods-electro_album_bleo-electro_album_bleoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-electro_album_bleo-electro_album_bleoUITests/Pods-electro_album_bleo-electro_album_bleoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73062405BE534419CFB1E911 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-electro_album_bleoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77F6DCCD237BA07C00D05FCD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		7D5E8F908F1B9739411397B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-electro_album_bleo/Pods-electro_album_bleo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-electro_album_bleo/Pods-electro_album_bleo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-electro_album_bleo/Pods-electro_album_bleo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893B627B7D588830B278F17C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-electro_album_bleo-electro_album_bleoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77F6DC96237BA02600D05FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F6DCD9237BA96D00D05FCD /* SplashReactor.swift in Sources */,
+				77F6DCDD237BC8B500D05FCD /* BleoNavigateStep.swift in Sources */,
+				7706A6DF237D31FA00C6C1D4 /* AlbumListResponse.swift in Sources */,
+				7706A6E2237D32B300C6C1D4 /* BleoAPIEndPoint.swift in Sources */,
+				7706A6D8237CF48000C6C1D4 /* AlbumReactor.swift in Sources */,
+				7706A6DD237D31BE00C6C1D4 /* AlbumResponse.swift in Sources */,
+				77F6DC9E237BA02600D05FCD /* AppDelegate.swift in Sources */,
+				7706A6D6237CF47500C6C1D4 /* AlbumViewController.swift in Sources */,
+				77F6DCDB237BB68600D05FCD /* BleoAPIService.swift in Sources */,
+				77F6DCDF237BCA4300D05FCD /* SplashFlow.swift in Sources */,
+				77F6DCD7237BA96400D05FCD /* SplashViewController.swift in Sources */,
+				7706A6DA237D03E300C6C1D4 /* AlbumFlow.swift in Sources */,
+				7706A6E6237D3B1900C6C1D4 /* AlbumList.swift in Sources */,
+				7706A6E8237E439100C6C1D4 /* CustomJsonDecoder.swift in Sources */,
+				77F6DCD2237BA61100D05FCD /* BleoFlow.swift in Sources */,
+				77F6DCD4237BA61A00D05FCD /* BleoService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F6DCAC237BA02800D05FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F6DCB5237BA02800D05FCD /* BleoTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F6DCB7237BA02800D05FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F6DCC0237BA02800D05FCD /* BleoUITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77F6DCB2237BA02800D05FCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77F6DC99237BA02600D05FCD /* electro_album_bleo */;
+			targetProxy = 77F6DCB1237BA02800D05FCD /* PBXContainerItemProxy */;
+		};
+		77F6DCBD237BA02800D05FCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77F6DC99237BA02600D05FCD /* electro_album_bleo */;
+			targetProxy = 77F6DCBC237BA02800D05FCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77F6DCA8237BA02800D05FCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77F6DCA9237BA02800D05FCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77F6DCC2237BA02800D05FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77F6DCC3237BA02800D05FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77F6DCC5237BA02800D05FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9995D283EB61626547FECCA7 /* Pods-electro_album_bleo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZTQD3VYFK;
+				INFOPLIST_FILE = electro_album_bleo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bleo.electro-album-bleo-hi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		77F6DCC6237BA02800D05FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DA143D127FD640BB7A7CEA /* Pods-electro_album_bleo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUPCG5JGA8;
+				INFOPLIST_FILE = electro_album_bleo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bleo.electro-album-bleo-hi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		77F6DCC8237BA02800D05FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D131E78BBAA24CFA127F6C4 /* Pods-electro_album_bleoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96362WK8WF;
+				INFOPLIST_FILE = electro_album_bleoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bleo.electro-album-bleoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/electro_album_bleo.app/electro_album_bleo";
+			};
+			name = Debug;
+		};
+		77F6DCC9237BA02800D05FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98CF2E811843DFFF53B8B35 /* Pods-electro_album_bleoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96362WK8WF;
+				INFOPLIST_FILE = electro_album_bleoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bleo.electro-album-bleoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/electro_album_bleo.app/electro_album_bleo";
+			};
+			name = Release;
+		};
+		77F6DCCB237BA02800D05FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA83F463EA1DE52E5027E1C /* Pods-electro_album_bleo-electro_album_bleoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96362WK8WF;
+				INFOPLIST_FILE = electro_album_bleoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bleo.electro-album-bleoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = electro_album_bleo;
+			};
+			name = Debug;
+		};
+		77F6DCCC237BA02800D05FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1843F7B4AFB463B386AF2CC /* Pods-electro_album_bleo-electro_album_bleoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96362WK8WF;
+				INFOPLIST_FILE = electro_album_bleoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bleo.electro-album-bleoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = electro_album_bleo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77F6DC95237BA02600D05FCD /* Build configuration list for PBXProject "electro_album_bleo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F6DCC2237BA02800D05FCD /* Debug */,
+				77F6DCC3237BA02800D05FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F6DCC4237BA02800D05FCD /* Build configuration list for PBXNativeTarget "electro_album_bleo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F6DCC5237BA02800D05FCD /* Debug */,
+				77F6DCC6237BA02800D05FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F6DCC7237BA02800D05FCD /* Build configuration list for PBXNativeTarget "electro_album_bleoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F6DCC8237BA02800D05FCD /* Debug */,
+				77F6DCC9237BA02800D05FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F6DCCA237BA02800D05FCD /* Build configuration list for PBXNativeTarget "electro_album_bleoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F6DCCB237BA02800D05FCD /* Debug */,
+				77F6DCCC237BA02800D05FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77F6DC92237BA02600D05FCD /* Project object */;
+}

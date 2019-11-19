@@ -1,0 +1,6 @@
+framework module Pods_electro_album_bleo {
+  umbrella header "Pods-electro_album_bleo-umbrella.h"
+
+  export *
+  module * { export * }
+}
