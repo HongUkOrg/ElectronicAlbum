@@ -43,6 +43,16 @@ class AlbumViewController: UIViewController, View {
         
         $0.image = UIImage(named: "album_default")
         $0.contentMode = .scaleAspectFit
+        $0.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 0.9)
+    }
+    
+    private let albumTitle = UILabel().then {
+        $0.text = ""
+        $0.textColor = .black
+        $0.textAlignment = .left
+        $0.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        $0.numberOfLines = 1
+        $0.adjustsFontSizeToFitWidth = true
     }
     
     private let stepper = UIStepper().then {
@@ -118,24 +128,6 @@ class AlbumViewController: UIViewController, View {
         
         /// Getting Image and binding
         
-        /*
-         reactor.state
-         .filter { $0.isShowing && $0.currentAlbumIndex >= 0 }
-         .map { $0.albums[$0.currentAlbumIndex] }
-         .map { $0.media.m }
-         .distinctUntilChanged()
-         .filter { $0 != nil }
-         .map { URL(string: $0!)}
-         .filter { $0 != nil }
-         .map { $0! }
-         .observeOn(ConcurrentDispatchQueueScheduler(qos: .default))
-         .map { try Data(contentsOf: $0)}
-         .map { UIImage(data: $0)}
-         .observeOn(MainScheduler.asyncInstance)
-         .bind(animated: albumImage.rx.animated.fade(duration: 0.5).image)
-         .disposed(by: disposeBag)
-         */
-        
         reactor.state
             .map { $0.albumIamgeUrl }
             .distinctUntilChanged()
@@ -148,7 +140,13 @@ class AlbumViewController: UIViewController, View {
         reactor.state
             .map { $0.currentAlbumImage }
             .observeOn(MainScheduler.asyncInstance)
-            .bind(to: albumImage.rx.image)
+            .bind(animated: albumImage.rx.animated.fade(duration: 0.5).image)
+            .disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.albumTitle }
+            .observeOn(MainScheduler.asyncInstance)
+            .bind(animated: albumTitle.rx.animated.fade(duration: 0.5).text)
             .disposed(by: disposeBag)
         
         /// Binding Stepper, Interval
@@ -221,13 +219,14 @@ class AlbumViewController: UIViewController, View {
         super.viewDidLoad()
         
         print("AlbumViewController :: viewDidLoad")
-        view.backgroundColor = .white
         
+        view.backgroundColor = .white
         view.addSubview(startSlideShowBtn)
         view.addSubview(stepper)
         view.addSubview(stepperLabel)
         view.addSubview(albumImage)
         view.addSubview(networkStateLabel)
+        view.addSubview(albumTitle)
         
         remakePortraitContraints()
         
@@ -260,7 +259,7 @@ class AlbumViewController: UIViewController, View {
             $0.leading.equalToSuperview().offset(40)
             $0.trailing.equalToSuperview().offset(-40)
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(80)
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-200)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-220)
             
         }
         
@@ -268,6 +267,11 @@ class AlbumViewController: UIViewController, View {
             $0.height.equalTo(30)
             $0.leading.equalToSuperview().offset(40)
             $0.top.equalToSuperview().offset(60)
+        }
+        
+        albumTitle.snp.remakeConstraints {
+            $0.centerX.equalTo(albumImage.snp.centerX)
+            $0.top.equalTo(albumImage.snp.bottom).offset(10)
         }
     }
     
@@ -304,8 +308,13 @@ class AlbumViewController: UIViewController, View {
         
         networkStateLabel.snp.remakeConstraints {
             $0.height.equalTo(20)
-            $0.trailing.equalToSuperview().offset(-60)
+            $0.trailing.equalTo(stepper.snp.trailing)
             $0.top.equalToSuperview().offset(60)
+        }
+        
+        albumTitle.snp.remakeConstraints {
+            $0.centerX.equalTo(albumImage.snp.centerX)
+            $0.top.equalTo(albumImage.snp.bottom).offset(10)
         }
     }
 }

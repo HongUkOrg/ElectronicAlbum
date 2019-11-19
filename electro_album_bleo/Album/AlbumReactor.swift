@@ -34,11 +34,11 @@ final class AlbumReactor: Reactor, Stepper {
         case startSlideShow(AlbumListResponse)
         case nextSlideShow(AlbumListResponse)
         case stopSlideShow
-        case updateAlbumIndex
+        case updateNextAlbum
         case updateInterval(Int)
         case updateNetworkState(Bool)
         case updateImage(Data)
-        case readyForNextSlide
+        case readyForNextAlbum
         case updateOrientation
         case networkFailure
     }
@@ -51,6 +51,7 @@ final class AlbumReactor: Reactor, Stepper {
         var albums: [AlbumResponse] = []
         var albumCount = 0
         var albumIamgeUrl: String = ""
+        var albumTitle: String = ""
         var currentAlbumIndex = -1
         var btnImageColor = UIColor(red: 60/255, green: 159/255, blue: 226/255, alpha: 1)
         var currentAlbumImage = UIImage(named: "album_default")
@@ -83,8 +84,8 @@ final class AlbumReactor: Reactor, Stepper {
                     .map(Mutation.startSlideShow)
                     .catchErrorJustReturn(.networkFailure)
                     .asObservable(),
-                .just(.updateAlbumIndex),
-                .just(.readyForNextSlide)
+                .just(.updateNextAlbum),
+                .just(.readyForNextAlbum)
             ])
         case .showNextAlbum:
             return .concat([
@@ -100,8 +101,8 @@ final class AlbumReactor: Reactor, Stepper {
             ])
         case .updateAlbum:
             return .concat([
-                .just(.updateAlbumIndex),
-                .just(.readyForNextSlide)
+                .just(.updateNextAlbum),
+                .just(.readyForNextAlbum)
             ])
         case .stepperChanged(let interval):
             return .concat([
@@ -153,14 +154,19 @@ final class AlbumReactor: Reactor, Stepper {
             state.btnText = "Start"
             state.btnImageColor = UIColor(red: 60/255, green: 159/255, blue: 226/255, alpha: 1)
             
-        case .updateAlbumIndex:
+        case .updateNextAlbum:
             
             if !state.isShowing {
                 return state
             }
 
             state.currentAlbumIndex += 1
-            state.albumIamgeUrl = state.albums[state.currentAlbumIndex].media.m!
+            
+            let album = state.albums[state.currentAlbumIndex]
+            if let albumImageUrl = album.media.m, let albumTitle = album.title {
+                state.albumIamgeUrl = albumImageUrl
+                state.albumTitle = albumTitle
+            }
 
             if state.currentAlbumIndex == state.albumCount - 3 {
                 print("updateAlbumIndex :: get next Albums..")
@@ -173,7 +179,7 @@ final class AlbumReactor: Reactor, Stepper {
                 state.currentAlbumIndex = 0
             }
             
-        case .readyForNextSlide:
+        case .readyForNextAlbum:
             
             Observable.just(state.isShowing)
                 .filter { $0 == true }
